@@ -1,19 +1,15 @@
-import { useEffect, useState } from 'react'
+import { Provider } from 'react-redux'
 import Header from './components/Header'
 import Produtos from './containers/Produtos'
 
-import { GlobalStyle } from './styles'
-import { Provider } from 'react-redux'
-
 import { store } from './store'
 
-export type Game = {
+import { GlobalStyle } from './styles'
+
+export type Produto = {
   id: number
-  titulo: string
-  plataformas: string[]
-  precoAntigo: number
+  nome: string
   preco: number
-  categoria: string
   imagem: string
 }
 
